@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
         console.log(info.videoDetails.title);
         const title = slugify(info.videoDetails.title, {
             replacement: '-',
-            remove: /[*+~.()'"!:@new,punjabi,song,offical,video]/g,
+            remove: /[*+~.()'"!:@]/g,
             lower: false,
             strict: false
         });
