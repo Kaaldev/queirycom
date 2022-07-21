@@ -17,8 +17,8 @@ router.get('/', async (req, res) => {
         console.log(info.videoDetails.title);
         const title = slugify(info.videoDetails.title, {
             replacement: '-',
-            remove: /[*+~.()'"!:@]/g,
-            lower: true,
+            remove: /[*+~.()'"!:@]/g,NEW,HINDI,PUNJABI,OFFICIAL,AUDIO,SONG,ODIA,VIDEO,
+            lower: false,
             strict: false
         });
         res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
